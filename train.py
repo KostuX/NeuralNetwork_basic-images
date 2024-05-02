@@ -1,25 +1,17 @@
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
 import time
-import os
-import getpass
+
 import numpy as np
 import tensorflow as tf
-import cv2
 
-
-import keras
-from keras.datasets import mnist
 from keras.models import Sequential
-import keras_metrics
-from keras.layers import Dense, Dropout, Flatten, Conv2D, MaxPooling2D, Rescaling, BatchNormalization
-from keras.layers import RandomFlip, RandomTranslation, RandomZoom, RandomRotation, Input
+
+from keras.layers import Dense, Dropout, Flatten, Rescaling, Input
 from keras.optimizers import RMSprop, Adam, SGD
-import keras_tuner as kt
+
 
 from sklearn.metrics import classification_report
-from sklearn.model_selection import cross_val_predict
-from sklearn.tree import DecisionTreeClassifier
 
 import src.cfg as cfg
 import src.myModels as models_store

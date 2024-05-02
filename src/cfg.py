@@ -1,7 +1,7 @@
 
-fit = False  # make fit false if you do not want to train the network again
-train_dir = 'src/train'
-test_dir = 'src/test'
+fit = True  # make fit false if you do not want to train the network again
+train_dir = 'src/data/train'
+test_dir = 'src/data/test'
 
 batch_size = 12
 num_classes = 3
@@ -9,7 +9,7 @@ img_width = 128
 img_height = 128
 img_channels = 3
 
-epochs = 175
+epochs = 5
 
 
 # augmentation
